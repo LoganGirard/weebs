@@ -1,0 +1,22 @@
+<html>
+  <head>
+
+  <script type="text/javascript">
+
+    alert("derp");
+  </script>
+
+  </head>
+  <body>
+
+    <script type="text/javascript">
+    alert("derp");
+    </script>
+  </body>
+
+
+
+
+
+
+</html>
