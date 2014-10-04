@@ -1,0 +1,75 @@
+ @font-face {
+    font-family: ProximaNova-Sbold;
+    src: url(pics/Font/ProximaNova-Sbold.otf);
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
+ #weebly-logo{
+  margin: 0px 20px;
+}
+
+.main-header{
+  background-color: #518DCA;
+}
+
+.nav{
+    background-color:#2C3E50;
+    height:100%;
+    width:250px;
+    float:left;
+    padding:0px;
+
+    /* font for all nav-headers */
+    font-family: ProximaNova-Sbold;
+
+
+}
+
+.template-box>p {
+  text-align: left;
+  align: center;
+
+  color: #FFFFFF;
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 60%;
+  background-color: #518DCA;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+.nav-header p{
+  text-align: center;
+  color: #96ADC3;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  vertical-align: middle;
+
+  background-color: #4F657B;
+  border-bottom: 2px solid black;
+  margin:0px 0px;
+
+
+}
+
+#new-page-field{
+  background-color: #2C3E50;
+  color: #FFFFFF;
+  font-family: ProximaNova-Sbold;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  margin-left: 30px;
+  width: 68%;
+
+}
