@@ -15,10 +15,16 @@ html, body {
 }
 
 .main-header{
+  /* blue border on top of screen that contains weebly logo */
+
+
   background-color: #518DCA;
 }
 
 .nav{
+  /* navigation bar on the left */
+
+
     background-color:#2C3E50;
     height:100%;
     width:250px;
@@ -31,21 +37,10 @@ html, body {
 
 }
 
-.template-box>p {
-  text-align: left;
-  align: center;
-
-  color: #FFFFFF;
-  padding-left: 20px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  width: 60%;
-  background-color: #518DCA;
-  margin-left: 30px;
-  border-radius: 5px;
-}
-
 .nav-header p{
+  /* general formatting for all banners in the nav bar */
+
+
   text-align: center;
   color: #96ADC3;
   width: 100%;
@@ -59,17 +54,58 @@ html, body {
 
 
 }
+.template-box>p {
+  /* formatting for page elements under templates header */
 
-#new-page-field{
-  background-color: #2C3E50;
-  color: #FFFFFF;
-  font-family: ProximaNova-Sbold;
   text-align: left;
+  align: center;
+
+  color: #FFFFFF;
   padding-left: 20px;
   padding-top: 8px;
   padding-bottom: 8px;
-  border-radius: 5px;
+  width: 60%;
+  background-color: #518DCA;
   margin-left: 30px;
-  width: 68%;
+  border-radius: 5px;
+}
 
+
+
+#new-page-field{
+  /* input field for new pages */
+  background-color: #2C3E50;
+  border: 2px solid #4D6379;
+  color: #4D6379;
+  font-family: ProximaNova-Sbold;
+  text-align: left;
+
+  padding-left: 17px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+
+  margin-left: 30px;
+  width: 69%;
+
+  /* delete button image */
+  background: url(pics/Sprites/Delete-Icon.png) no-repeat 90% 8px;
+
+}
+
+/* formatting for in text color of new-page-area */
+*::-webkit-input-placeholder {
+    color: #4D6379;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #4D6379;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #4D6379;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #4D6379;
 }
