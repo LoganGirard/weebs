@@ -4,9 +4,24 @@
     <link rel="stylesheet" type="text/css" href="mockupstyle.css">
 
     <script type="text/javascript">
+      function addPageFunc(p){
+          var textField = document.getElementById('new-page-field');
 
+          var div = document.createElement("div");
+          var para = document.createElement("p");
+          var node = document.createTextNode(textField.value);
+          var button = document.createElement("button");
 
+          para.appendChild(node);
+          div.appendChild(para);
+          div.appendChild(button);
+          div.className = "page-edit";
 
+          var template = document.getElementsByClassName('template-box')[0];
+
+          template.insertBefore(div, template.lastChild);
+
+      }
 
     </script>
 
@@ -24,13 +39,18 @@
         <header class="nav-header" id="templates" role="banner">
           <p>TEMPLATES</p>
         </header>
-
+      <div class="page-edit">
         <p>PAGE</p>
+        <button />
+      </div>
 
-        <form action="">
-          <input type="text" id="new-page-field" placeholder="ADD NEW PAGE" name="page-name">
-           
+        <form action="" class="page-form">
+
+            <input type="text" id="new-page-field" placeholder="ADD NEW PAGE" name="page-name">
+            <button id="new-page-button" type="button" onclick="addPageFunc()"/>
+
         </form>
+
       </div>
 
 

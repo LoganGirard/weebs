@@ -1,22 +1,20 @@
 <html>
-  <head>
+<head>
+<script>
+function displayResult() {
+    var x = document.getElementById("myHeader").innerHTML;
+    if(x != "Have a nice day!"){
+      document.getElementById("myHeader").innerHTML = "Have a nice day!";
+    } else {
+      document.getElementById("myHeader").innerHTML = "Hello World!";
+    }
+}
+</script>
+</head>
+<body>
 
-  <script type="text/javascript">
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
 
-    alert("derp");
-  </script>
-
-  </head>
-  <body>
-
-    <script type="text/javascript">
-    alert("derp");
-    </script>
-  </body>
-
-
-
-
-
-
+</body>
 </html>
