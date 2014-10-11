@@ -53,7 +53,7 @@ html, body {
 
 
 }
-.template-box .page-edit>p {
+.page-edit>p {
   /* formatting for page elements under templates header */
 
   text-align: left;
@@ -63,30 +63,33 @@ html, body {
   padding-left: 20px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 60%;
+  padding-right: 40px;
+
+
+  width: 48%;
   background-color: #518DCA;
   margin-left: 30px;
   border-radius: 5px;
+
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
-.page-edit>button{
+
+
+.template-box button{
   display: block;
-
-
 
   height: 16px;
   width: 16px;
 
-
-  margin-left: 179px;
-  margin-top: -40px;
-
-
   /*load sprite and select default add sprite*/
   background:transparent no-repeat;
   background-image: url('pics/Sprites/Add-Delete-Edit-Icons.png');
-  background-position: -12px -12px;
+
   border: 0px;
 
 
@@ -94,7 +97,20 @@ html, body {
 
 }
 
+.page-edit .delete-page-button{
+  margin-left: 179px;
+  margin-top: -41px;
 
+  background-position: -52px -12px;
+}
+
+.delete-page-button:hover{
+  background-position: -52px -31px;
+}
+
+.page-form{
+  margin-bottom: 28px;
+}
 
 #new-page-field{
   /* input field for new pages */
@@ -120,7 +136,7 @@ html, body {
 
   /*match length of created page buttons */
   margin-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 69%;
 
 }
@@ -147,27 +163,23 @@ html, body {
 /* formatting for button in new page area */
 #new-page-button{
     /*positioning inside text field*/
-    height: 16px;
-    width: 16px;
 
-margin-left: 179px;
-margin-top: -45px;
+
+    margin-left: 179px;
+    margin-top: -55px;
 
 
     /*load sprite and select default add sprite*/
-    background:transparent no-repeat;
-    background-image: url('pics/Sprites/Add-Delete-Edit-Icons.png');
+
     background-position: -12px -12px;
     border: 0px;
 
 
-    display:block;
+
 }
 
 #new-page-field:hover + #new-page-button, #new-page-button:hover{
   /* make page button white if hovered or field is hovered */
-
-
 
   background-position: -12px -31px;
 

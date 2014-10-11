@@ -11,6 +11,7 @@
           var para = document.createElement("p");
           var node = document.createTextNode(textField.value);
           var button = document.createElement("button");
+          button.className = 'delete-page-button'
 
           para.appendChild(node);
           div.appendChild(para);
@@ -41,7 +42,7 @@
         </header>
       <div class="page-edit">
         <p>PAGE</p>
-        <button />
+        <button class="delete-page-button"/>
       </div>
 
         <form action="" class="page-form">
