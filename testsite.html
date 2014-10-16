@@ -4,23 +4,36 @@
     <link rel="stylesheet" type="text/css" href="mockupstyle.css">
 
     <script type="text/javascript">
-      function addPageFunc(p){
+      function addPageFunc(){
           var textField = document.getElementById('new-page-field');
+          if(textField.value == ""){
+            return;
+          }
 
           var div = document.createElement("div");
           var para = document.createElement("p");
           var node = document.createTextNode(textField.value);
+
           var button = document.createElement("button");
           button.className = 'delete-page-button'
+          para.className = "page-text"
+          button.onclick = function() { deletePageFunc(this); }
 
           para.appendChild(node);
-          div.appendChild(para);
           div.appendChild(button);
+          div.appendChild(para);
+
           div.className = "page-edit";
 
           var template = document.getElementsByClassName('template-box')[0];
 
           template.insertBefore(div, template.lastChild);
+
+      }
+
+      function deletePageFunc(e){
+          var div = e.parentNode;
+          document.getElementsByClassName('template-box')[0].removeChild(div);
 
       }
 
@@ -41,11 +54,14 @@
           <p>TEMPLATES</p>
         </header>
       <div class="page-edit">
+
+        <button type="button" class="delete-page-button" onclick="deletePageFunc(this)"></button>
         <p>PAGE</p>
-        <button class="delete-page-button"/>
+        <button class="rename-page-button"></button>
+
       </div>
 
-        <form action="" class="page-form">
+        <form onsubmit="return false;" class="page-form">
 
             <input type="text" id="new-page-field" placeholder="ADD NEW PAGE" name="page-name">
             <button id="new-page-button" type="button" onclick="addPageFunc()"/>

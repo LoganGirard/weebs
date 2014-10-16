@@ -7,7 +7,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: lightblue;
+    background-color: #FFFFFF;
 }
 
  #weebly-logo{
@@ -53,11 +53,17 @@ html, body {
 
 
 }
-.page-edit>p {
+.page-edit p {
   /* formatting for page elements under templates header */
 
   text-align: left;
   align: center;
+
+  position:relative;
+  margin-left: 30px;
+  margin-top: -5px;
+  margin-bottom: 0px;
+  z-index:1;
 
   color: #FFFFFF;
   padding-left: 20px;
@@ -68,17 +74,13 @@ html, body {
 
   width: 48%;
   background-color: #518DCA;
-  margin-left: 30px;
-  border-radius: 5px;
 
+  border-radius: 5px;
 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-
-
 
 .template-box button{
   display: block;
@@ -86,26 +88,43 @@ html, body {
   height: 16px;
   width: 16px;
 
-  /*load sprite and select default add sprite*/
+
   background:transparent no-repeat;
   background-image: url('pics/Sprites/Add-Delete-Edit-Icons.png');
 
   border: 0px;
 
 
-
-
 }
 
-.page-edit .delete-page-button{
-  margin-left: 179px;
-  margin-top: -41px;
 
+.page-edit .delete-page-button{
+  margin-left: 186px;
+  top: 20;
+  position:relative;
+  z-index:2;
   background-position: -52px -12px;
 }
 
 .delete-page-button:hover{
   background-position: -52px -31px;
+
+}
+
+.delete-page-button:hover + p{
+  background: #D86A65;
+  -webkit-transition: background 2s;
+
+}
+
+.rename-page-button{
+  background-position: -52px -31px;
+  margin-left: 166px;
+  top:-10;
+
+  position: relative;
+  z-index:2;
+
 }
 
 .page-form{
@@ -120,9 +139,7 @@ html, body {
   color: #FFFFFF;
   font-family: ProximaNova-Sbold;
   text-align: left;
-  margin-top: 15px;
-
-
+  margin-top: 10px;
 
   padding-left: 17px;
   padding-top: 8px;
@@ -136,27 +153,11 @@ html, body {
 
   /*match length of created page buttons */
   margin-left: 30px;
-  margin-bottom: 30px;
-  width: 69%;
+  margin-bottom: 22px;
+  width: 72%;
 
 }
 
-/* formatting for in text color of new-page-area */
-*::-webkit-input-placeholder {
-    color: #4D6379;
-}
-*:-moz-placeholder {
-    /* FF 4-18 */
-    color: #4D6379;
-}
-*::-moz-placeholder {
-    /* FF 19+ */
-    color: #4D6379;
-}
-*:-ms-input-placeholder {
-    /* IE 10+ */
-    color: #4D6379;
-}
 
 
 
@@ -164,17 +165,13 @@ html, body {
 #new-page-button{
     /*positioning inside text field*/
 
-
-    margin-left: 179px;
-    margin-top: -55px;
-
+    margin-left: 186px;
+    margin-top: -48px;
 
     /*load sprite and select default add sprite*/
 
     background-position: -12px -12px;
     border: 0px;
-
-
 
 }
 
@@ -195,4 +192,22 @@ html, body {
 #new-page-button:active{
 
   background-position: -12px -50px;
+}
+
+
+/* formatting for in text color of new-page-area */
+*::-webkit-input-placeholder {
+    color: #4D6379;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #4D6379;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #4D6379;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #4D6379;
 }
